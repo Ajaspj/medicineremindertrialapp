@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "217302502615",
+    "project_id": "exampl-be8d5",
+    "storage_bucket": "exampl-be8d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217302502615:android:02f2755c8a3b2ca7b7f492",
+        "android_client_info": {
+          "package_name": "com.example.medicineremindertrialapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPP7_ZfRkcBk5cKz7MqX_zUc8UvPcmiMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
