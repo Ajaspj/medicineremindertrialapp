@@ -23,7 +23,7 @@ class MedicationProvider with ChangeNotifier {
 
   Future<void> removeMedication(int id) async {
     await DatabaseHelper().deleteMedication(id);
-    await loadMedications(); // Reload medications after removal
+    await loadMedications();
   }
 
   Future<List<Medication>> getMedications() async {
@@ -32,6 +32,6 @@ class MedicationProvider with ChangeNotifier {
 
   Future<void> loadMedications() async {
     _medications = await getMedications();
-    notifyListeners(); // Notify listeners to update UI
+    notifyListeners();
   }
 }

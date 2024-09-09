@@ -1,5 +1,5 @@
 class Medication {
-  int? id; // Ensure that id is of type int
+  int? id;
   final String name;
   final String dosage;
   final DateTime time;
@@ -13,7 +13,6 @@ class Medication {
     required this.instructions,
   });
 
-  // Assuming you have a fromJson method to create a Medication object from a map.
   factory Medication.fromJson(Map<String, dynamic> json) {
     return Medication(
       id: json['id'],
@@ -24,7 +23,6 @@ class Medication {
     );
   }
 
-  // Method to convert Medication object to map for database storage.
   Map<String, dynamic> toJson() {
     return {
       'id': id,

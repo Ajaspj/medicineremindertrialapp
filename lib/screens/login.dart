@@ -49,7 +49,7 @@ class LoginScreen extends StatelessWidget {
                     controller: viewModel.phoneNumberController,
                     decoration: InputDecoration(
                       labelText: 'Phone Number',
-                      hintText: '0000000000', // Only the 10-digit number
+                      hintText: '0000000000',
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -67,7 +67,7 @@ class LoginScreen extends StatelessWidget {
                       if (value == null || value.isEmpty) {
                         return 'Please enter your phone number';
                       }
-                      // Validate 10-digit number
+
                       if (!RegExp(r'^\d{10}$').hasMatch(value)) {
                         return 'Please enter a valid 10-digit phone number';
                       }
