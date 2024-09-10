@@ -130,7 +130,7 @@ class AddMedicationViewModel extends BaseViewModel {
   }
 
   void updateDosage(String value) {
-    _dosage = value;
+    _dosage = value;          
     notifyListeners();
   }
 
@@ -183,7 +183,7 @@ class AddMedicationViewModel extends BaseViewModel {
 
       const AndroidNotificationDetails androidPlatformChannelSpecifics =
           AndroidNotificationDetails(
-        'medication_channel',
+        'medication_channel',    
         'Medication Reminder',
         channelDescription: 'Channel for medication reminders',
         importance: Importance.max,
