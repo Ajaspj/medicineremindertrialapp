@@ -77,7 +77,7 @@ class ProfileScreen extends StatelessWidget {
                 style: TextStyle(fontSize: 18, color: Colors.black87),
               ),
               onTap: () {
-                // Navigate to change password screen
+                Navigator.of(context).pushNamed('/Changepassword');
               },
             ),
             Divider(),
@@ -99,7 +99,7 @@ class ProfileScreen extends StatelessWidget {
                 style: TextStyle(fontSize: 18, color: Colors.redAccent),
               ),
               onTap: () {
-                // Handle logout
+                Navigator.of(context).pushNamed('/login');
               },
             ),
           ],

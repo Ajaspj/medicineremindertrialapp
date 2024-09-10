@@ -5,8 +5,10 @@ import 'package:medicineremindertrialapp/models/medicationmodel.dart';
 import 'package:medicineremindertrialapp/providers/medication_provider.dart';
 import 'package:medicineremindertrialapp/screens/EditMedicationScreen.dart';
 import 'package:medicineremindertrialapp/screens/add_medication_screen.dart';
+import 'package:medicineremindertrialapp/screens/changepassword_screen.dart';
 import 'package:medicineremindertrialapp/screens/home_screen.dart';
 import 'package:medicineremindertrialapp/screens/language.dart';
+import 'package:medicineremindertrialapp/screens/login.dart';
 import 'package:medicineremindertrialapp/screens/otpinput.dart';
 import 'package:medicineremindertrialapp/screens/privacypolicy.dart';
 import 'package:medicineremindertrialapp/screens/splashscreen.dart';
@@ -72,6 +74,7 @@ class MyApp extends StatelessWidget {
           routes: {
             '/': (context) => auth.user == null ? SplashScreen() : HomeScreen(),
             '/home': (context) => HomeScreen(),
+            '/login': (context) => LoginScreen(),
             '/otp': (context) => OtpScreen(),
             '/addMedication': (context) => AddMedicationScreen(),
             '/editMedication': (context) => EditMedicationScreen(
@@ -80,6 +83,7 @@ class MyApp extends StatelessWidget {
             '/language': (context) => LanguageChangeScreen(),
             '/privacy': (context) => PrivacyPolicyScreen(),
             '/terms': (context) => TermsAndServiceScreen(),
+            '/Changepassword': (context) => ChangePasswordScreen()
           },
         ),
       ),
